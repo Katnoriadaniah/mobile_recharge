@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<title>{% block title %}Contact us{% endblock %}</title>
+<div class="container rounded" style="background:white; color: #1b1b1b; margin-top: 10%;">
+    <div class="row row-cols-2" >
+      <div class="col" >
+        <center>
+           <a href="https://www.instagram.com/__katnoria_danish__/" style="color:#1b1b1b; text-decoration: none;">
+        <img src="{% static 'images/insta2.jpg' %}" class="rounded" width="120px" height="120px" style="margin-top:50px;" >
+        <br><br>
+          <h4>Contact us on Instagram</h4>
+          <p>Contact me on my personal instagram account. </p>
+         </a>
+        </center>
+      </div>
+
+      <div class="col" >
+        <center>
+           <a href="https://t.me/joinchat/b2gUSd72Gd1hYjE1" style="color:#1b1b1b; text-decoration: none;">
+        <img src="{% static 'images/tele.jpg' %}" class="rounded" width="120px" height="120px" style="margin-top:50px;" >
+        <br><br>
+          <h4>Join Our Telegram Group</h4>
+          
+          <p>Join our telegram channel for new updates and get information about our next steps and other new technologies.</p>
+        </a>
+        </center>
+      </div>
+    </div>
+    <div class="col">
+    <center>
+       
+        <a href="https://www.facebook.com/people/Danish-Kumar/100073933257566/" style="color:#1b1b1b; text-decoration: none;">
+          <img src="{% static 'images/fb1.jpg' %}" class="rounded" width="120px" height="120px" style="margin-top:50px;" >
+        <br><br>
+          <h4>Contact us on Facebook</h4>
+        
+          <p>Contact me on facebook for any queries.</p>
+        </a>
+          <br>
+    </center>
+  </div>
+  </div>
+
+
+{% endblock content %}

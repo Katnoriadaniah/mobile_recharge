@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container rounded" style="background:white; color: #1b1b1b; margin-top:10%;">
+    <div class="row row-cols-2" >
+      <div class="col" >
+        <center>
+        <img src="{% static 'images/danish.jpg' %}" class="rounded" width="255px" height="260px" style="margin-top:50px;" >
+        <br><br>
+          <h3>Danish</h3>
+          <br>
+          <p style="width:255px;">
+            I am a web Developer and an Enggenering student . I work in my room with a cup of coffee .<br>
+          </p>
+           <a href="https://www.instagram.com/__katnoria_danish__/" style="color:#1b1b1b; text-decoration: none;">
+            <img src="{% static 'images/insta.jpg' %}" width="45px" height="45px" style="margin-bottom: 30px; margin-right: 8px;">
+          </a>
+           <a href="https://t.me/joinchat/b2gUSd72Gd1hYjE1" style="color:#1b1b1b; text-decoration: none;">
+          <img src="{% static 'images/tele.jpg' %}" width="45px" height="45px" style="margin-bottom: 30px; margin-left: 8px;" >
+        </a>
+          <a href="https://www.facebook.com/people/Danish-Kumar/100073933257566/" style="color:#1b1b1b; text-decoration: none;">
+                  <img src="{% static 'images/fb1.jpg' %}"  width="50px" height="50px" style="margin-bottom: 30px; margin-left: 8px;" >
+                </a>
+
+        </center>
+      </div>
+      <div class="col">
+        <center  style="margin-top:50px;">
+          <h3>
+            Our Aim
+          </h3><br>
+          <p>Our Aim is to provide free education in all over the world .Now we are starting it with few free hacking tutorials. In coming few days we will provide live hacking tutorials and also some easy exercise to sharp your hacking skills.</p>
+          <br>
+          <h3>Advantages</h3>
+        </center>
+          <ul>
+            <li>You doesn't need any type of subscription for learning here.</li>
+            <li>You doesn't need to create any type of account here. </li>
+            <li>It is totally free learning here.</li>
+            <li>We publish everyday a new tutorial  .</li>
+          </ul>
+          <center><h3>Disadvantages</h3></center>
+          <ul>
+            <li>We are begginer here so we want to prepare and learn too much things before publishing so may be it will take time of more than one or two day to publish any new tutorial here. </li>
+          </ul>
+
+
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

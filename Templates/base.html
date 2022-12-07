@@ -1,0 +1,87 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+	    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" type="text/css" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+		<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+		<style type="text/css">
+			body
+			{
+				margin: 0px;
+				padding: 0px;
+				color: white;
+				
+			}
+			.nav .div .ul .li
+			{
+				color: white;
+			}
+
+			.main
+			{
+				min-height: 100vh;
+				height: 100%;
+				margin-top: 10%;
+				
+			}
+			.top
+			{
+				margin-left: 10%;
+				margin-right: 5%;
+			}
+			.heading
+			{
+
+				margin-top: 10%;
+			}
+		
+		</style>
+	</head>
+		
+		<body>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				</button>
+			  <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
+			    <ul class="navbar-nav">
+			       <li class="nav-item active p-1" >
+				        <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+				      </li>
+					      <li class="nav-item active p-1">
+					        <a class="nav-link" href="{% url 'prerecharge' %}">Recharge Now</a>
+					     </li>
+					     <li class="nav-item active p-1">
+					        <a class="nav-link" href="#">Show Plans</a>
+					     </li>
+					     <li class="nav-item active p-1">
+					        <a class="nav-link" href="{% url 'transaction' %}"> Recent Transactions</a>
+					     </li>
+						<li class="nav-item active p-1">
+					        <a class="nav-link" href="{% url 'contact' %}">Contact us</a>
+					     </li>
+					      <li class="nav-item active p-1">
+					        <a class="nav-link" href="{% url 'about' %}">About us</a>
+					      </li>
+				      
+			    </ul>
+			  </div>
+			</nav>	
+			
+		<div class="main">
+			{% block content %}
+			
+			{% endblock content %}
+		</div>
+		
+
+		
+	</body>
+</html>
